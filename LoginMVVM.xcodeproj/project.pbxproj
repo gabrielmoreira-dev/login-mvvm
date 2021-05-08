@@ -12,6 +12,9 @@
 		1387CC3B2646D26A0016FDA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1387CC3A2646D26A0016FDA7 /* Assets.xcassets */; };
 		1387CC3E2646D26A0016FDA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1387CC3C2646D26A0016FDA7 /* LaunchScreen.storyboard */; };
 		1387CC482646D6930016FDA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1387CC472646D6930016FDA7 /* LoginViewController.swift */; };
+		1387CC4B2646DED00016FDA7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1387CC4A2646DED00016FDA7 /* LoginViewModel.swift */; };
+		1387CC4E2646E4020016FDA7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1387CC4D2646E4020016FDA7 /* User.swift */; };
+		1387CC502646EC1B0016FDA7 /* UserValidationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1387CC4F2646EC1B0016FDA7 /* UserValidationState.swift */; };
 		8EC5496D31E62BC4CC359B15 /* Pods_LoginMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF4CE07EBC94F88EE87B7CF /* Pods_LoginMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 		1387CC3D2646D26A0016FDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1387CC3F2646D26A0016FDA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1387CC472646D6930016FDA7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1387CC4A2646DED00016FDA7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1387CC4D2646E4020016FDA7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1387CC4F2646EC1B0016FDA7 /* UserValidationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidationState.swift; sourceTree = "<group>"; };
 		40529D2EF3EF947C533D9815 /* Pods-LoginMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVVM.debug.xcconfig"; path = "Target Support Files/Pods-LoginMVVM/Pods-LoginMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		5306AC30D6E1A403011E72AA /* Pods-LoginMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVVM.release.xcconfig"; path = "Target Support Files/Pods-LoginMVVM/Pods-LoginMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		8CF4CE07EBC94F88EE87B7CF /* Pods_LoginMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +80,8 @@
 		1387CC452646D4F10016FDA7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1387CC4C2646E3F50016FDA7 /* Model */,
+				1387CC492646DEBA0016FDA7 /* ViewModel */,
 				1387CC462646D5020016FDA7 /* ViewController */,
 			);
 			path = Classes;
@@ -85,6 +93,23 @@
 				1387CC472646D6930016FDA7 /* LoginViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1387CC492646DEBA0016FDA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1387CC4A2646DED00016FDA7 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1387CC4C2646E3F50016FDA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1387CC4D2646E4020016FDA7 /* User.swift */,
+				1387CC4F2646EC1B0016FDA7 /* UserValidationState.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5E3677FA911F9F94341741B0 /* Frameworks */ = {
@@ -218,8 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1387CC4B2646DED00016FDA7 /* LoginViewModel.swift in Sources */,
+				1387CC502646EC1B0016FDA7 /* UserValidationState.swift in Sources */,
 				1387CC482646D6930016FDA7 /* LoginViewController.swift in Sources */,
 				1387CC322646D2680016FDA7 /* AppDelegate.swift in Sources */,
+				1387CC4E2646E4020016FDA7 /* User.swift in Sources */,
 				1387CC342646D2680016FDA7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
